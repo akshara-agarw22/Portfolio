@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header-bar {
+    background-color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin-left: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.github-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.github-link i {
+    font-size: 18px;
+}
+
+.hero-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.my-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border: 3px solid #999;
+}
+
+#ABOUT {
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#PROJECT {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#CONTACT {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+
+
+footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .hero-section {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .my-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .header-bar h1 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .github-link {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .github-link:hover {
+        text-decoration: underline;
+    }
+
+    .github-link i {
+        font-size: 14px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 90%;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    #ABOUT {
+        padding: 0 10px;
+        text-align: left;
+    }
+
+    .contact-form {
+        padding: 0 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .github-link {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .github-link:hover {
+        text-decoration: underline;
+    }
+
+    .github-link i {
+        font-size: 14px;
+    }
+
+    .my-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    #ABOUT {
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    .contact-form {
+        padding: 0 15px;
+    }
+}
